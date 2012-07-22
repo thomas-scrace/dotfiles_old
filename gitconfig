@@ -3,3 +3,4 @@
 	email = tom@scrace.org
 [core]
 	editor = vi
+    excludesfile = ~/.gitignore
