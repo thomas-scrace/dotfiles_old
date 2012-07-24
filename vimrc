@@ -92,6 +92,9 @@ nnoremap <leader>v V`]
 " ,w opens a new vertical split and switches to it
 nnoremap <leader>w <C-w>v<C-w>l
 
+" ,e opens a new vertical split and switches to it
+nnoremap <leader>e <C-w>s<C-w>j
+
 " :Px gives us prettified XML
 function! DoPrettyXML()
   " save the filetype so we can restore it later
