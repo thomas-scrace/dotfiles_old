@@ -7,6 +7,7 @@ set nocompatible                    " don't worry about being vi compatible
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+filetype plugin on                  " we need this for some plugins
 set modelines=0                     " fix security vulnerability
 set tabstop=4                       " tab characters count for 4 columns
 set shiftwidth=4                    " indent operations move text 4 columns
