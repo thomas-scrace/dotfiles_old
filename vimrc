@@ -126,4 +126,4 @@ endfunction
 command! Px call DoPrettyXML()
 
 " ,pj gives us prettified json
-map <leader>pj <Esc>:%!json_xs -f json -t json-pretty<CR>
+map <leader>pj <Esc>:%!python -m json.tool
