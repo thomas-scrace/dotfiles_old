@@ -8,6 +8,7 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 filetype plugin on                  " we need this for some plugins
+let g:slime_python_ipython = 1      " use %cpaste in ipython for slime.vim
 set modelines=0                     " fix security vulnerability
 set tabstop=4                       " tab characters count for 4 columns
 set shiftwidth=4                    " indent operations move text 4 columns
