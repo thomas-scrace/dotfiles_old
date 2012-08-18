@@ -33,7 +33,6 @@ set undofile                        " undos persist across sessions
 set wrap                            " softwrap lines wider than the window
 set textwidth=79                    " maximum width of line
 set formatoptions+=q                " allow formatting of comments with gq
-set formatoptions+=r                " auto-insert comment leader after enter
 set formatoptions+=n                " recognise numbered lists when formatting
 set formatoptions+=1                " don't break lines after 1-letter words
 set colorcolumn=79                  " highlight column 79
