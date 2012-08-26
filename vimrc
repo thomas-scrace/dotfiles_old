@@ -8,6 +8,7 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 filetype plugin on                  " we need this for some plugins
+let g:slime_python_ipython = 1      " use %cpaste in ipython for slime.vim
 set modelines=0                     " fix security vulnerability
 set tabstop=4                       " tab characters count for 4 columns
 set shiftwidth=4                    " indent operations move text 4 columns
@@ -32,7 +33,6 @@ set undofile                        " undos persist across sessions
 set wrap                            " softwrap lines wider than the window
 set textwidth=79                    " maximum width of line
 set formatoptions+=q                " allow formatting of comments with gq
-set formatoptions+=r                " auto-insert comment leader after enter
 set formatoptions+=n                " recognise numbered lists when formatting
 set formatoptions+=1                " don't break lines after 1-letter words
 set colorcolumn=79                  " highlight column 79
@@ -127,4 +127,4 @@ endfunction
 command! Px call DoPrettyXML()
 
 " ,pj gives us prettified json
-map <leader>pj <Esc>:%!json_xs -f json -t json-pretty<CR>
+map <leader>pj <Esc>:%!python -m json.tool
