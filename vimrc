@@ -19,7 +19,6 @@ set scrolloff=5                     " we get 5 lines of context for searches
 set autoindent                      " newlines start at same indent as prev
 set showmode                        " display current mode bottom left
 set showcmd                         " show command at bottom of screen
-set hidden                          " hide buffers instead of closing them
 set wildmenu
 set wildmode=list:longest           " make command completion sane
 set visualbell                      " flash instead of alert sound
@@ -44,10 +43,6 @@ set showmatch                       "          search results
 set hlsearch                        "                        as we type
 
 let mapleader = ','                 " remap leader key to ,
-
-" auto-insert \v before search terms to be compatible with Python regex
-nnoremap / /\v
-vnoremap / /\v
 
 "clear out searches using ,<space>
 nnoremap <leader><space> :noh<cr>
