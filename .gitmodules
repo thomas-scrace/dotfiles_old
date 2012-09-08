@@ -7,3 +7,6 @@
 [submodule "vim/bundle/vim-slime"]
 	path = vim/bundle/vim-slime
 	url = https://github.com/jpalardy/vim-slime.git
+[submodule "vim/bundle/pyflakes"]
+	path = vim/bundle/pyflakes
+	url = https://github.com/kevinw/pyflakes-vim.git
