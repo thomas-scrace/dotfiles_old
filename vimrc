@@ -71,6 +71,13 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" ,t toggles the taglist buffer
+nnoremap <leader>t :TlistToggle<CR>
+" and auto-focus on the buffer when it is opened
+let Tlist_GainFocus_On_ToggleOpen = 1
+" and set its minimum width to 30
+let Tlist_WinWidth = 30
+
 set t_Co=256                        " force 256 colours
 syntax on                           " syntax highlighting
 set background=dark                 " use colours for dark background

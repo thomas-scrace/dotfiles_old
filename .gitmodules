@@ -10,3 +10,6 @@
 [submodule "vim/bundle/pyflakes"]
 	path = vim/bundle/pyflakes
 	url = https://github.com/kevinw/pyflakes-vim.git
+[submodule "vim/bundle/taglist"]
+	path = vim/bundle/taglist
+	url = https://github.com/vim-scripts/taglist.vim.git
