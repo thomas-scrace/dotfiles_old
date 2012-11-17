@@ -86,7 +86,7 @@ screens = [
                     [
                         widget.GroupBox(font='Ubuntu', fontsize=12),
                         widget.WindowName(font='Ubuntu', fontsize=12),
-                        widget.Clock('%Y-%m-%d-%H-%M', font='Ubuntu', fontsize=12),
+                        widget.Clock('%Y-%m-%d %H-%M', font='Ubuntu', fontsize=12),
                     ],
                     30,
                 ),
