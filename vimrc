@@ -30,7 +30,7 @@ set laststatus=2                    " always show the status line
 set relativenumber                  " line numbers are relative to the cursor
 set undofile                        " undos persist across sessions
 set wrap                            " softwrap lines wider than the window
-set textwidth=79                    " maximum width of line
+"set textwidth=79                    " maximum width of line
 set formatoptions+=q                " allow formatting of comments with gq
 set formatoptions+=n                " recognise numbered lists when formatting
 set formatoptions+=1                " don't break lines after 1-letter words
@@ -41,6 +41,7 @@ set gdefault                        " apply substitutions globally by default
 set incsearch                       " highlight
 set showmatch                       "          search results
 set hlsearch                        "                        as we type
+
 
 let mapleader = ','                 " remap leader key to ,
 
@@ -82,6 +83,10 @@ set t_Co=256                        " force 256 colours
 syntax on                           " syntax highlighting
 set background=dark                 " use colours for dark background
 colorscheme molokai                 " use the molokai colour scheme
+
+" highlight trailing whitespace
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
 
 " ,W strips all trailing whitespace
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
