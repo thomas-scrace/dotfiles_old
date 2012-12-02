@@ -2,3 +2,8 @@
 *.un~
 *.pyc
 *.log
+*.o
+xmonad/xmonad.errors
+xmonad/xmonad.hi
+xmonad/xmonad-x86_64-linux
+
