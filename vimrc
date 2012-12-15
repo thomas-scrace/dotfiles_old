@@ -79,10 +79,11 @@ let Tlist_GainFocus_On_ToggleOpen = 1
 " and set its minimum width to 30
 let Tlist_WinWidth = 30
 
-set t_Co=256                        " force 256 colours
 syntax on                           " syntax highlighting
+se t_Co=16
+let g:solarized_termcolors=16
 set background=dark                 " use colours for dark background
-colorscheme molokai                 " use the molokai colour scheme
+colorscheme solarized
 
 " highlight trailing whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
