@@ -37,10 +37,10 @@ URxvt.scrollStyle:          rxvt
 URxvt.scrollBar:            false
 
 ! Perl extensions
-URxvt.perl-lib:             /usr/lib/urxvt/perl/
+URxvt.perl-lib:             /home/tom/dotfiles/urxvt-perls/
 URxvt.perl-ext-common:      default,matcher,clipboard
-URxvt.keysym.C-c:        perl:clipboard:copy
-URxvt.keysym.C-v:        perl:clipboard:paste
+URxvt.keysym.C-c:           perl:clipboard:copy
+URxvt.keysym.C-v:           perl:clipboard:paste
 URxvt.keysym.M-C-v:         perl:clipboard:paste_escaped
 URxvt.clipboard.copycmd:    xsel -ib
 URxvt.clipboard.pastecmd:   xsel -ob
