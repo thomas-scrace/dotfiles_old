@@ -5,10 +5,13 @@ import XMonad.Util.Run(spawnPipe)
 import XMonad.Util.EZConfig(additionalKeys)
 import System.IO
 
+myTerminal = "urxvt"
+
 main = do
     xmproc <- spawnPipe "/usr/bin/xmobar /home/tom/.xmobarrc"
     xmonad $ defaultConfig
-        { manageHook = manageDocks <+> manageHook defaultConfig,
+        { terminal = myTerminal,
+          manageHook = manageDocks <+> manageHook defaultConfig,
           layoutHook = avoidStruts $ layoutHook defaultConfig,
           logHook = dynamicLogWithPP xmobarPP
               { ppOutput = hPutStrLn xmproc,
