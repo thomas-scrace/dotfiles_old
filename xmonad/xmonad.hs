@@ -6,11 +6,14 @@ import XMonad.Util.EZConfig(additionalKeys)
 import System.IO
 
 myTerminal = "urxvt"
+myFocusFollowsMouse :: Bool
+myFocusFollowsMouse = False
 
 main = do
     xmproc <- spawnPipe "/usr/bin/xmobar /home/tom/.xmobarrc"
     xmonad $ defaultConfig
         { terminal = myTerminal,
+          focusFollowsMouse = myFocusFollowsMouse,
           manageHook = manageDocks <+> manageHook defaultConfig,
           layoutHook = avoidStruts $ layoutHook defaultConfig,
           logHook = dynamicLogWithPP xmobarPP
