@@ -3,6 +3,7 @@
 *.pyc
 *.log
 *.o
+*.out
 xmonad/xmonad.errors
 xmonad/xmonad.hi
 xmonad/xmonad-x86_64-linux
