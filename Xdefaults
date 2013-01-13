@@ -36,12 +36,14 @@ URxvt*letterSpace: -1
 URxvt.scrollStyle:          rxvt
 URxvt.scrollBar:            false
 
+URxvt.iso14755: false
+
 ! Perl extensions
 URxvt.perl-lib:             /home/tom/dotfiles/urxvt-perls/
 URxvt.perl-ext-common:      default,matcher,clipboard
-URxvt.keysym.C-c:           perl:clipboard:copy
-URxvt.keysym.C-v:           perl:clipboard:paste
-URxvt.keysym.M-C-v:         perl:clipboard:paste_escaped
+URxvt.keysym.Shift-Control-C:         perl:clipboard:copy
+URxvt.keysym.Shift-Control-V:           perl:clipboard:paste
+!URxvt.keysym.M-C-v:         perl:clipboard:paste_escaped
 URxvt.clipboard.copycmd:    xsel -ib
 URxvt.clipboard.pastecmd:   xsel -ob
 URxvt.matcher.button:       1
