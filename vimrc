@@ -80,10 +80,9 @@ let Tlist_GainFocus_On_ToggleOpen = 1
 let Tlist_WinWidth = 30
 
 syntax on                           " syntax highlighting
-se t_Co=16
-let g:solarized_termcolors=16
+set t_Co=256
 set background=dark                 " use colours for dark background
-colorscheme solarized
+colorscheme wombat256
 
 " highlight trailing whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red

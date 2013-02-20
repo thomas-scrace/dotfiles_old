@@ -21,4 +21,5 @@ main = do
                 ppTitle = xmobarColor "green" "" . shorten 50
               }
         } `additionalKeys`
-        [ ((mod1Mask .|. shiftMask, xK_z), spawn "xscreensaver-command -lock")]
+        [ ((mod1Mask .|. shiftMask, xK_z), spawn "xscreensaver-command -lock"),
+          ((mod1Mask .|. shiftMask, xK_s), spawn "/usr/bin/screenshot scr")]

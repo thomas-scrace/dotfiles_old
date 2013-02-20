@@ -1,5 +1,5 @@
-urxvt*font: xft:Inconsolata:pixelsize=15
-urxvt*boldFont: xft:Inconsolata:pixelsize=15
+urxvt*font: xft:Inconsolata:pixelsize=16
+urxvt*boldFont: xft:Inconsolata:pixelsize=16
 
 !-------------------------------------------------------------------------------
 ! Xft settings
@@ -11,12 +11,6 @@ Xft.rgba:                   rgb
 Xft.hinting:                true
 Xft.hintstyle:              hintslight
 
-!-------------------------------------------------------------------------------
-! URxvt settings
-! Colours lifted from Solarized (http://ethanschoonover.com/solarized)
-! More info at:
-! http://pod.tst.eu/http://cvs.schmorp.de/rxvt-unicode/doc/rxvt.1.pod
-!-------------------------------------------------------------------------------
 
 URxvt.depth:                32
 URxvt.geometry:             90x30
@@ -57,44 +51,33 @@ URxvt.cursorUnderline:      false
 ! Pointer
 URxvt.pointerBlank:         true
 
-!!Source http://github.com/altercation/solarized
+! terminal colours
+*foreground:#a0a0a0
+*background:#1b1d1e
 
-*background: #002b36
-*foreground: #657b83
-!!*fading: 40
-*fadeColor: #002b36
-*cursorColor: #93a1a1
-*pointerColorBackground: #586e75
-*pointerColorForeground: #93a1a1
+!molokai inspired colors
 
-!! black dark/light
-*color0: #073642
-*color8: #002b36
-
-!! red dark/light
-*color1: #dc322f
-*color9: #cb4b16
-
-!! green dark/light
-*color2: #859900
-*color10: #586e75
-
-!! yellow dark/light
-*color3: #b58900
-*color11: #657b83
-
-!! blue dark/light
-*color4: #268bd2
-*color12: #839496
-
-!! magenta dark/light
-*color5: #d33682
-*color13: #6c71c4
-
-!! cyan dark/light
-*color6: #2aa198
-*color14: #93a1a1
-
-!! white dark/light
-*color7: #eee8d5
-*color15: #fdf6e3
+!black
+*color0:    #1b1d1e
+*color8:    #505354
+!red
+*color1:    #f92672
+*color9:    #ff5995
+!green
+*color2:    #82b414
+*color10:   #b6e354
+!yellow
+*color3:    #fd971f
+*color11:   #feed6c
+!blue
+*color4:    #56c2d6
+*color12:   #8cedff
+!magenta
+*color5:    #8c54fe
+*color13:   #9e6ffe
+!cyan
+*color6:    #465457
+*color14:   #899ca1
+!white
+*color7:    #ccccc6
+*color15:   #f8f8f2

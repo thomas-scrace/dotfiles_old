@@ -315,7 +315,7 @@ if version >= 508 || !exists("did_python_syn_inits")
   endif
 
   HiLink pythonStatement	Statement
-  HiLink pythonPreCondit	Include
+  HiLink pythonPreCondit	Statement
   HiLink pythonFunction		Function
   HiLink pythonConditional	Conditional
   HiLink pythonRepeat		Repeat
@@ -327,7 +327,7 @@ if version >= 508 || !exists("did_python_syn_inits")
   HiLink pythonDot          Normal
 
   HiLink pythonComment		Comment
-  HiLink pythonCoding		Comment
+  HiLink pythonCoding		Special
   HiLink pythonRun		Special
   HiLink pythonTodo		Todo
 
@@ -335,10 +335,10 @@ if version >= 508 || !exists("did_python_syn_inits")
   HiLink pythonIndentError	Error
   HiLink pythonSpaceError	Error
 
-  HiLink pythonString		hsString
-  HiLink pythonUniString	hsString
-  HiLink pythonRawString	hsString
-  HiLink pythonUniRawString	hsString
+  HiLink pythonString		String
+  HiLink pythonUniString	String
+  HiLink pythonRawString	String
+  HiLink pythonUniRawString	String
 
   HiLink pythonEscape			Special
   HiLink pythonEscapeError		Error
@@ -354,11 +354,11 @@ if version >= 508 || !exists("did_python_syn_inits")
   HiLink pythonDocTest		Special
   HiLink pythonDocTest2		Special
 
-  HiLink pythonNumber		PreProc
-  HiLink pythonHexNumber	PreProc
-  HiLink pythonOctNumber	PreProc
-  HiLink pythonBinNumber	PreProc
-  HiLink pythonFloat		PreProc
+  HiLink pythonNumber		Number
+  HiLink pythonHexNumber	Number
+  HiLink pythonOctNumber	Number
+  HiLink pythonBinNumber	Number
+  HiLink pythonFloat		Float
   HiLink pythonOctError	    Error
   HiLink pythonHexError		Error
   HiLink pythonBinError		Error
