@@ -8,7 +8,6 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 filetype plugin on                  " we need this for some plugins
-let g:slime_python_ipython = 1      " use %cpaste in ipython for slime.vim
 set modelines=0                     " fix security vulnerability
 set tabstop=4                       " tab characters count for 4 columns
 set shiftwidth=4                    " indent operations move text 4 columns
@@ -30,7 +29,6 @@ set laststatus=2                    " always show the status line
 set relativenumber                  " line numbers are relative to the cursor
 set undofile                        " undos persist across sessions
 set wrap                            " softwrap lines wider than the window
-"set textwidth=79                    " maximum width of line
 set formatoptions+=q                " allow formatting of comments with gq
 set formatoptions+=n                " recognise numbered lists when formatting
 set formatoptions+=1                " don't break lines after 1-letter words
@@ -71,13 +69,6 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-
-" ,t toggles the taglist buffer
-nnoremap <leader>t :TlistToggle<CR>
-" and auto-focus on the buffer when it is opened
-let Tlist_GainFocus_On_ToggleOpen = 1
-" and set its minimum width to 30
-let Tlist_WinWidth = 30
 
 syntax on                           " syntax highlighting
 set t_Co=256
