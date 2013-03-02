@@ -1,0 +1,17 @@
+[general]
+accounts = gmail
+
+[Account gmail]
+localrepository = Local
+remoterepository = Remote
+
+[Repository Local]
+type = Maildir
+localfolders = ~/mail
+
+[Repository Remote]
+type = Gmail
+remoteuser = t.scrace@gmail.com
+remotepass = zsfghudmjxxnmtry
+folderfilter = lambda foldername: foldername not in '[Gmail]/All Mail'
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
