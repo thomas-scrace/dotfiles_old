@@ -21,5 +21,5 @@
         publish-branch = !BRANCHNAME=$(git symbolic-ref HEAD | cut -d / -f 3) && git push origin $BRANCHNAME:refs/heads/$BRANCHNAME && git config branch.$BRANCHNAME.remote origin && git config branch.$BRANCHNAME.merge refs/heads/$BRANCHNAME
 
 [core]
-        excludesfile = ./gitignore
+        excludesfile = ~/.gitignore
         editor = vim

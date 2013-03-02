@@ -33,6 +33,7 @@ set formatoptions+=q                " allow formatting of comments with gq
 set formatoptions+=n                " recognise numbered lists when formatting
 set formatoptions+=1                " don't break lines after 1-letter words
 set colorcolumn=79                  " highlight column 79
+set textwidth=64                    " Lines break at 64 chars
 set ignorecase                      " iff we search on an all-lowercase ...
 set smartcase                       " ... string we are case-insensitive
 set gdefault                        " apply substitutions globally by default
@@ -83,7 +84,7 @@ match ExtraWhitespace /\s\+$/
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
 " ,q re-hardwraps paragraphs of text
-nnoremap <leader>q gqip
+nnoremap <leader>q gqap
 
 " ,v selects the text that was just pasted into a buffer
 nnoremap <leader>v V`]
